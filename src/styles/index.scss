@@ -1,16 +1,25 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 
+body {
+    margin: 200px;
+}
+
 .traffic-light{
     background-color: black;
-    padding: 10px;
-    display: inline-block;
+    width: fit-content;
+    padding: 10px; 
     margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 3%;
 }
 
 .light {
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
     border-radius: 50%;
 }
 .red {
@@ -19,10 +28,12 @@
 
 .yellow {
     background-color: yellow;
+    margin-top: 10px;
 }
 
 .green {
     background-color: green;
+    margin-top: 10px;
 }
 
 .glow{
