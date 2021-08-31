@@ -1,5 +1,4 @@
-import React, { usesState } from "react";
-import "../styles/index.scss";
+import React, { useState } from "react";
 //create your first component
 
 function TrafficLight() {
@@ -9,19 +8,19 @@ function TrafficLight() {
 		<div className="traffic-light">
 			<button
 				className={
-					"light red" + (colorSelected == "red") ? " glow" : ""
+					"light red" + (colorSelected == "red" ? " glow" : "")
 				}
-				onClick={setColorSelected("red")}></button>
+				onClick={() => setColorSelected("red")}></button>
 			<button
 				className={
-					"light yellow" + (colorSelected == "yellow") ? "glow" : ""
+					"light yellow" + (colorSelected == "yellow" ? " glow" : "")
 				}
-				onClick={setColorSelected("yellow")}></button>
+				onClick={() => setColorSelected("yellow")}></button>
 			<button
 				className={
-					"light green" + (colorSelected == "green") ? " glow" : ""
+					"light green" + (colorSelected == "green" ? " glow" : "")
 				}
-				onClick={setColorSelected("green")}></button>
+				onClick={() => setColorSelected("green")}></button>
 		</div>
 	);
 }
